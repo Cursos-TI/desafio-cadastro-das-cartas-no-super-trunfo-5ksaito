@@ -1,22 +1,43 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-
-
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
+    int main(){
+    //Variáveis separadas para cada atributo da cidade.
+        char codigo[20], estado[20], nomecidade[50];
+        int populacao, nmrturisticos;
+        float pib, areakm;
     // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("Código Cidade: ");
+    scanf("%s", &codigo);
 
-    return 0;
+    printf("Nome do Estado: ");
+    scanf("%s", &estado);
+
+    printf("Nome da Cidade: ");
+    scanf("%s", &nomecidade);
+
+    printf("População: ");
+    scanf("%d", &populacao);
+
+    printf("Números turisticos: ");
+    scanf("%d", &nmrturisticos);
+
+    printf("PIB da cidade: ");
+    scanf("%f", &pib);
+
+    printf("Área em Km²: ");
+    scanf("%f", &areakm);
+
+    //Saida dos dados das cartas
+    printf("\n---------- Carta ----------\n"); // Adicionado um cabeçalho para melhor organização
+    printf("|Código: %s\n", codigo);
+    printf("|Estado: %s\n", estado);
+    printf("|Cidade: %s\n", nomecidade);
+    printf("|População: %d\n", populacao);
+    printf("|Número de Pontos Turísticos: %d\n", nmrturisticos);
+    printf("|PIB: %.2f\n", pib);
+    printf("|Área em Km²: %.2f\n", areakm);
+    printf("\n---------------------------\n");
+    
+return 0;
+    
 }
